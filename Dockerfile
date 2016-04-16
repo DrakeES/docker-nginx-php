@@ -6,7 +6,7 @@ ENV TERM xterm
 
 RUN \
   apt-get update -qq && \
-  apt-get install -qq -y nano make rsync nginx telnet git net-tools php5-fpm php5-curl php5-mysqlnd supervisor sudo php5-xdebug && \
+  apt-get install -qq -y nano make rsync nginx telnet git net-tools php5-cli php5-fpm php5-curl php5-mysqlnd supervisor sudo php5-xdebug && \
   apt-get autoremove && \
   apt-get clean && \
   php -r "readfile('https://getcomposer.org/installer');" > composer-setup.php && \
